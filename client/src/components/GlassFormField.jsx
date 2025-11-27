@@ -1,16 +1,16 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
-export default function GlassFormField({ 
-  label, 
-  type = "text", 
-  placeholder, 
-  value, 
+export default function GlassFormField({
+  label,
+  type = "text",
+  placeholder,
+  value,
   onChange,
   required = false,
   as = "input"
 }) {
   const Component = as === "textarea" ? "textarea" : "input";
-  
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -21,7 +21,7 @@ export default function GlassFormField({
         {label}
         {required && <span className="text-[#D68A28] ml-1">*</span>}
       </label>
-      
+
       <div className="relative group">
         <Component
           type={type}
@@ -43,7 +43,7 @@ export default function GlassFormField({
             ${as === "textarea" ? "min-h-[120px] resize-none" : ""}
           `}
         />
-        
+
         {/* Focus Glow Effect */}
         <div className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-focus-within:opacity-100 transition-opacity duration-300">
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[rgba(214,138,40,0.1)] to-[rgba(255,215,154,0.1)] blur-sm" />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from "lucide-react";
 import GlassFormField from "../GlassFormField";
 import EnergyBurstButton from "../EnergyBurstButton";
@@ -88,11 +88,11 @@ export default function ContactPage() {
               ✨ Get in Touch
             </span>
           </div>
-          
+
           <h1 className="text-5xl md:text-6xl mb-6 text-[#FFD79A]" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
             Contact Us
           </h1>
-          
+
           <p className="text-lg text-[rgba(255,255,255,0.7)]">
             Have questions? We're here to guide you on your cosmic journey
           </p>
@@ -272,7 +272,7 @@ export default function ContactPage() {
                   <rect width="400" height="400" fill="url(#map-pattern)" />
                 </svg>
               </div>
-              
+
               <div className="relative z-10 text-center">
                 <MapPin className="w-16 h-16 text-[#FFD79A] mx-auto mb-4" />
                 <h3 className="text-2xl text-white mb-2" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
@@ -304,7 +304,7 @@ export default function ContactPage() {
               Book a consultation and discover what the cosmos has in store for you
             </p>
           </div>
-          
+
           <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-gradient-to-br from-[#6C33FF] to-[#4EA3FF] opacity-20 blur-3xl" />
           <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-gradient-to-br from-[#FFD79A] to-[#D68A28] opacity-20 blur-3xl" />
         </motion.div>

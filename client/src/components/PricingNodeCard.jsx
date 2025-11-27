@@ -1,12 +1,12 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import EnergyBurstButton from "./EnergyBurstButton";
 
-export default function PricingNodeCard({ 
-  title, 
-  price, 
-  duration, 
-  features, 
+export default function PricingNodeCard({
+  title,
+  price,
+  duration,
+  features,
   highlighted = false,
   delay = 0,
   onSelect
@@ -21,8 +21,8 @@ export default function PricingNodeCard({
     >
       <div className={`
         relative rounded-[32px] glass-blur p-8 h-full
-        ${highlighted 
-          ? 'bg-gradient-to-br from-[rgba(108,51,255,0.15)] to-[rgba(78,163,255,0.15)] border-2 border-[#6C33FF] shadow-[0_0_40px_rgba(108,51,255,0.3)]' 
+        ${highlighted
+          ? 'bg-gradient-to-br from-[rgba(108,51,255,0.15)] to-[rgba(78,163,255,0.15)] border-2 border-[#6C33FF] shadow-[0_0_40px_rgba(108,51,255,0.3)]'
           : 'bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.1)]'}
         transition-all duration-300 hover:scale-105
       `}>
@@ -75,7 +75,7 @@ export default function PricingNodeCard({
               Book Now
             </EnergyBurstButton>
           ) : (
-            <button 
+            <button
               onClick={onSelect}
               className="w-full px-8 py-4 rounded-full bg-[rgba(255,255,255,0.06)] glass-blur border border-[rgba(255,215,154,0.3)] text-white hover:border-[rgba(255,215,154,0.6)] transition-all duration-300"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}

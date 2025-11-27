@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Sparkles, TrendingUp, Heart, Briefcase, Shield } from "lucide-react";
 import AstroOrbChart from "../AstroOrbChart";
 import CosmicCapsuleCard from "../CosmicCapsuleCard";
@@ -167,16 +167,15 @@ export default function KundliReadingPage({ onNavigate }) {
                 <div
                   className={`
                     px-3 py-1 rounded-full text-xs
-                    ${
-                      item.status === "Excellent"
-                        ? "bg-[rgba(108,51,255,0.3)] text-[#6C33FF]"
-                        : item.status === "Strong"
+                    ${item.status === "Excellent"
+                      ? "bg-[rgba(108,51,255,0.3)] text-[#6C33FF]"
+                      : item.status === "Strong"
                         ? "bg-[rgba(78,163,255,0.3)] text-[#4EA3FF]"
                         : item.status === "Good"
-                        ? "bg-[rgba(78,163,255,0.3)] text-[#4EA3FF]"
-                        : item.status === "Moderate"
-                        ? "bg-[rgba(255,215,154,0.3)] text-[#FFD79A]"
-                        : "bg-[rgba(214,138,40,0.3)] text-[#D68A28]"
+                          ? "bg-[rgba(78,163,255,0.3)] text-[#4EA3FF]"
+                          : item.status === "Moderate"
+                            ? "bg-[rgba(255,215,154,0.3)] text-[#FFD79A]"
+                            : "bg-[rgba(214,138,40,0.3)] text-[#D68A28]"
                     }
                   `}
                 >
@@ -230,17 +229,15 @@ export default function KundliReadingPage({ onNavigate }) {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`relative mb-10 ${
-                index % 2 === 0
+              className={`relative mb-10 ${index % 2 === 0
                   ? "md:pr-[calc(50%+3rem)]"
                   : "md:pl-[calc(50%+3rem)] md:ml-auto"
-              } pl-20 md:pl-0`}
+                } pl-20 md:pl-0`}
             >
               {/* Node */}
               <div
-                className={`absolute top-0 ${
-                  index % 2 === 0 ? "left-8 md:right-0" : "left-8 md:left-0"
-                } w-8 h-8 rounded-full border-4 border-[#0B0B0E] flex items-center justify-center`}
+                className={`absolute top-0 ${index % 2 === 0 ? "left-8 md:right-0" : "left-8 md:left-0"
+                  } w-8 h-8 rounded-full border-4 border-[#0B0B0E] flex items-center justify-center`}
                 style={{ backgroundColor: dasha.color }}
               >
                 <div className="w-2 h-2 rounded-full bg-white" />
@@ -250,10 +247,9 @@ export default function KundliReadingPage({ onNavigate }) {
               <div
                 className={`
                   rounded-2xl p-6 glass-blur border
-                  ${
-                    dasha.status === "current"
-                      ? "bg-gradient-to-br from-[rgba(255,215,154,0.2)] to-[rgba(214,138,40,0.2)] border-[rgba(255,215,154,0.6)] shadow-[0_0_30px_rgba(255,215,154,0.3)]"
-                      : "bg-[rgba(255,255,255,0.04)] border-[rgba(255,255,255,0.1)]"
+                  ${dasha.status === "current"
+                    ? "bg-gradient-to-br from-[rgba(255,215,154,0.2)] to-[rgba(214,138,40,0.2)] border-[rgba(255,215,154,0.6)] shadow-[0_0_30px_rgba(255,215,154,0.3)]"
+                    : "bg-[rgba(255,255,255,0.04)] border-[rgba(255,255,255,0.1)]"
                   }
                 `}
               >

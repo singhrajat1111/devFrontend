@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
 export default function TestimonialGlassTile({ name, location, rating, text, delay = 0 }) {
@@ -13,7 +13,7 @@ export default function TestimonialGlassTile({ name, location, rating, text, del
       <div className="relative rounded-3xl bg-[rgba(255,255,255,0.04)] glass-blur border border-[rgba(255,255,255,0.1)] p-8 h-full overflow-hidden transition-all duration-300 hover:border-[rgba(108,51,255,0.4)] hover:shadow-[0_0_30px_rgba(108,51,255,0.2)]">
         {/* Orbital Highlight */}
         <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-gradient-to-br from-[rgba(108,51,255,0.2)] to-[rgba(78,163,255,0.2)] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        
+
         {/* Rating Stars */}
         <div className="flex gap-1 mb-4 relative z-10">
           {Array.from({ length: rating }).map((_, i) => (

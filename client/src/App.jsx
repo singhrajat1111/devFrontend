@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 
 import CelestialHeader from "./components/CelestialHeader";
 import CelestialFooter from "./components/CelestialFooter";

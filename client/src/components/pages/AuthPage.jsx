@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Link, useNavigate } from "react-router-dom";
+import { Input } from "../ui/input";
+import { Button } from "../ui/button";
 
 export default function AuthPage() {
   const navigate = useNavigate();

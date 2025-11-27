@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 // Icons
 import { Calendar as CalendarIcon, Clock, Check } from "lucide-react";

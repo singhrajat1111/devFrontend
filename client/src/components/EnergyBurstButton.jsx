@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export default function EnergyBurstButton({ children, onClick, className = "" }) {
   return (
@@ -11,7 +11,7 @@ export default function EnergyBurstButton({ children, onClick, className = "" })
     >
       {/* Pulse Animation Background */}
       <div className="absolute inset-0 rounded-full pulse-glow" />
-      
+
       {/* Shimmer Effect */}
       <div className="absolute inset-0 rounded-full overflow-hidden">
         <motion.div

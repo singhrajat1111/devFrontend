@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import CosmicCapsuleCard from "../CosmicCapsuleCard";
 import EnergyBurstButton from "../EnergyBurstButton";

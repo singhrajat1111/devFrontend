@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Award, BookOpen, Globe, Star, Sparkles, TrendingUp, Users } from "lucide-react";
 import EnergyBurstButton from "../EnergyBurstButton";

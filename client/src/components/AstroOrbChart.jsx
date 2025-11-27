@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export default function AstroOrbChart() {
   const planets = [
@@ -46,13 +46,13 @@ export default function AstroOrbChart() {
         <div className="absolute inset-8 rounded-full bg-[rgba(11,11,14,0.6)] border border-[rgba(255,215,154,0.2)]">
           {/* Center Core */}
           <div className="absolute inset-1/4 rounded-full bg-gradient-to-br from-[#6C33FF] to-[#4EA3FF] opacity-20 blur-2xl" />
-          
+
           {/* House Divisions */}
           {houses.map((house, i) => {
             const angle = (i * 30 * Math.PI) / 180 - Math.PI / 2;
             const x = 50 + Math.cos(angle) * 35;
             const y = 50 + Math.sin(angle) * 35;
-            
+
             return (
               <div
                 key={house}
@@ -100,7 +100,7 @@ export default function AstroOrbChart() {
                     boxShadow: `0 0 20px ${planet.color}66`
                   }}
                 />
-                
+
                 {/* Tooltip */}
                 <div className="absolute left-1/2 -translate-x-1/2 -top-16 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-50">
                   <div className="bg-[rgba(11,11,14,0.95)] glass-blur border border-[rgba(255,215,154,0.3)] rounded-2xl px-4 py-2">

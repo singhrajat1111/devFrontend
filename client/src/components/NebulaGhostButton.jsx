@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export default function NebulaGhostButton({ children, onClick, className = "" }) {
   return (
@@ -7,7 +7,7 @@ export default function NebulaGhostButton({ children, onClick, className = "" })
       whileTap={{ scale: 0.95 }}
       onClick={onClick}
       className={`relative px-8 py-4 rounded-full bg-[rgba(255,255,255,0.04)] glass-blur border-2 border-transparent text-white overflow-hidden group ${className}`}
-      style={{ 
+      style={{
         fontFamily: "'Space Grotesk', sans-serif",
         borderImage: "linear-gradient(135deg, #6C33FF, #4EA3FF) 1"
       }}
